@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Google search" />
+    <meta name="author" content="ლუკა ქვრივიშვილი" />
+    <link rel="icon" href="images/icon.svg" />
+    <title>google search</title>
+</head>
+
+<body>
+    <h1>ფილმების ძებნის ფორმა</h1>
+
+    <form action="https://ge.movie/filter-movies">
+        <label for="film">რა გსურთ ეძებოთ:</label>
+        <select name="type" id="film">
+            <option value="movie">ფილმი</option>
+
+            <option value="serial">სერიალი</option>
+
+            <option value="search">ყველაფერი</option>
+        </select>
+        <br />
+
+        <label for="genres" name="genres%5B%5D">ჟანრები:</label>
+        <select id="genres%5B%5D">
+            <option>არჩევა...</option>
+            <option value="detektivi">დეტექტივი</option>
+            <option value="animatsiuri">კომედია</option>
+            <option value="">ფანტასტიკა</option>
+            <option value="">დრამა</option>
+            <option value="">საშინელება</option>
+        </select>
+        <br />
+
+        <label for="lang">ენა:</label>
+        <select id="lang" name="languages">
+            <option>არჩევა</option>
+            <option value="ka">ქართული</option>
+            <option value="en">ინგლისური</option>
+            <option value="fr">ფრანგული</option>
+        </select>
+        <br />
+        <label for="countries">ქვეყნები:</label>
+        <select id="countries" name="countries">
+            <option>არჩევა</option>
+            <option value="us">აშშ</option>
+            <option value="ge">საქართველო</option>
+            <option value="fr">საფრანგეთი</option>
+        </select>
+        <br />
+        <label for="imdb">IMDb რეიტინგი: 1-10</label>
+        <input type="number" id="imdb" name="imdb" />
+
+        <br />
+
+
+        <label>გამოსვლის წელი: 1920-2024</label>
+        <input type="text" name="year">
+
+        <br />
+
+        <input type="submit" value="ძებნა" />
+    </form>
+
+</body>
+
+
+</html>
